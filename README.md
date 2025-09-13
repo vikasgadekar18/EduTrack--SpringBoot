@@ -99,23 +99,8 @@ GET /users: Fetch all users (Admin only).
 POST /users: Create a new user (Admin only).
 
 Project Structure
-src
-├── main
-│   ├── java
-│   │   └── com.edutrack
-│   │       ├── controller       # REST controllers
-│   │       ├── dto              # Data Transfer Objects
-│   │       ├── entity           # Database entity models
-│   │       ├── repository       # JPA Repositories
-│   │       ├── service          # Business logic
-│   │       └── util             # Utility classes
-│   └── resources
-│       ├── application.properties # Configuration
-│       └── schema.sql             # Database schema
-└── test
-    └── java
-        └── com.edutrack          # Unit and integration tests
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Explore my github repository you can easily see the project structure
+📞 Contact
+Developer: Vikas Gadekar
+Email: vikasgadekar10214@gmail.com
+GitHub: https://github.com/vikasgadekar18
