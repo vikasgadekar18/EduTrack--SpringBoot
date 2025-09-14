@@ -16,7 +16,6 @@ public class FacultyAttendanceController {
 	@Autowired
 	private FacultyAttendanceService facultyAttendanceService;
 
-	
 	@GetMapping
 	public List<FacultyAttendance> getAllFacultyAttendances() {
 		return facultyAttendanceService.getAllFacultyAttendances();
