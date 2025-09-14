@@ -25,6 +25,7 @@ public class DepartmentController {
     
     private DepartmentService departmentService;
 
+    
     @GetMapping
     public List<Department> getAllDepartments() {
         return departmentService.getAllDepartments();
