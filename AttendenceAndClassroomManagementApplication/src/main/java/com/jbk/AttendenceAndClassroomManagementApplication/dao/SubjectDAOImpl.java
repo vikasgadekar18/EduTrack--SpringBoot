@@ -31,6 +31,7 @@ public class SubjectDAOImpl implements SubjectDAO {
 		return subjects;
 	}
 
+	
 	@Override
 	public Subject getSubjectById(Long id) {
 		Session session = null;

@@ -12,4 +12,5 @@ public interface SubjectDAO {
     void saveSubject(Subject subject);
 
     void deleteSubject(Long id);
+    
 }
