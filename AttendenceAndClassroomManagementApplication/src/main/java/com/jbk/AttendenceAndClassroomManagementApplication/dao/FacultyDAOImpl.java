@@ -25,6 +25,7 @@ public class FacultyDAOImpl implements FacultyDAO {
 		} finally {
 			if (session != null) {
 				session.close();
+				
 			}
 		}
 		return faculties;

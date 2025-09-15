@@ -12,5 +12,6 @@ public interface FacultyDAO {
 
     void saveFaculty(Faculty faculty);
 
+    
     void deleteFaculty(Long id);
 }

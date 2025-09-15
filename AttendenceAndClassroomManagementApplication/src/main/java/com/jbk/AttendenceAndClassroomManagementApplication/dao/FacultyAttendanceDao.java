@@ -28,6 +28,7 @@ public class FacultyAttendanceDao {
         session.close();
         return facultyAttendance;
     }
+    
 
     public void saveFacultyAttendance(FacultyAttendance facultyAttendance) {
         Session session = sessionFactory.openSession();
