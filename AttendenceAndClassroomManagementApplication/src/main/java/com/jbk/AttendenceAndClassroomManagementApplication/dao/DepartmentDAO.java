@@ -12,5 +12,6 @@ public interface DepartmentDAO {
 
     void saveDepartment(Department department);
 
+    
     void deleteDepartment(Long id);
 }

@@ -27,6 +27,7 @@ public class DepartmentDAOImpl implements DepartmentDAO {
 				session.close();
 			}
 		}
+		
 		return departments;
 	}
 
