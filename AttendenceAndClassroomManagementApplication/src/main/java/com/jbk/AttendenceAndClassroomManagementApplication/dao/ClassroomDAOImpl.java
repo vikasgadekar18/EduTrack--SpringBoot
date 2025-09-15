@@ -1,5 +1,6 @@
 package com.jbk.AttendenceAndClassroomManagementApplication.dao;
 
+
 import java.util.List;
 
 import org.hibernate.Session;
@@ -14,6 +15,7 @@ import com.jbk.AttendenceAndClassroomManagementApplication.entity.Classroom;
 @Repository
 public class ClassroomDAOImpl implements ClassroomDAO {
 
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 

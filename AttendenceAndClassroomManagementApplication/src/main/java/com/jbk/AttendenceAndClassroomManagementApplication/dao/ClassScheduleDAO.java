@@ -12,5 +12,6 @@ public interface ClassScheduleDAO {
 
     void saveClassSchedule(ClassSchedule classSchedule);
 
+ 
     void deleteClassSchedule(Long id);
 }

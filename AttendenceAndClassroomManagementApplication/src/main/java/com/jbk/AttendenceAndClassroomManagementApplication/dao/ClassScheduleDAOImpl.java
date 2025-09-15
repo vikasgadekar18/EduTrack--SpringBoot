@@ -26,6 +26,7 @@ public class ClassScheduleDAOImpl implements ClassScheduleDAO {
 			if (session != null) {
 				session.close();
 			}
+			
 		}
 		return classSchedules;
 	}
