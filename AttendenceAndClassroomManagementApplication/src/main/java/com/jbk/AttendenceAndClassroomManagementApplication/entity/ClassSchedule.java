@@ -54,6 +54,8 @@ public class ClassSchedule {
 		this.endTime = endTime;
 	}
 
+	
+	
 	public ClassSchedule() {
 		super();
 		// TODO Auto-generated constructor stub
