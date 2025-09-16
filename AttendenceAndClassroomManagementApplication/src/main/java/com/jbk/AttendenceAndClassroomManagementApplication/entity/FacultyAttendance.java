@@ -24,6 +24,7 @@ public class FacultyAttendance {
 	private ClassSchedule classSchedule;
 
 	@Temporal(TemporalType.DATE)
+	
 	private Date date;
 
 	private String status;
