@@ -20,6 +20,7 @@ public class Faculty {
 
     @Column(name = "department_id", nullable = false)
     private Long departmentId;
+    
 
 	public Faculty(Long id, String name, String email, Long departmentId) {
 		super();
