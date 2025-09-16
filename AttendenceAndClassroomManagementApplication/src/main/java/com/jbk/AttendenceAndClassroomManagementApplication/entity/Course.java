@@ -16,6 +16,7 @@ public class Course {
     @Column(nullable = false)
     private String name;
 
+    
 	public Course(Long id, String name) {
 		super();
 		this.id = id;
