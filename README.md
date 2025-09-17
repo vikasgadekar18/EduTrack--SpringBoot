@@ -1,106 +1,86 @@
-EduTrack - Attendance & Classroom Management System
-
-EduTrack is a Spring Boot-based application designed to streamline attendance tracking and classroom management processes. 
-It offers a user-friendly interface for educators and administrators to efficiently manage student attendance, course schedules, and related activities.
-
-Features
-
-Role-Based Access Control: Secure login with distinct roles for Admin and Instructor.
-
-Attendance Management: Record and track student attendance for each class session.
-
-Course Scheduling: Organize and manage course schedules and timings.
-
-Student Enrollment: Enroll students into courses and monitor their progress.
-
-Real-Time Notifications: Notify students and instructors about attendance status and updates.
-
-Tech Stack
-
-Backend: Spring Boot
-
-Authentication: JWT (JSON Web Token)
-
-Database: MySQL
-
-Build Tool: Maven
-
-Testing: JUnit, Mockito
-
-Dependency Injection: Spring Framework
-
-Setup Instructions
-Prerequisites
-
-Java 17 or higher
-
-Maven 3.8+
-
-MySQL 8+
-
-IDE: IntelliJ IDEA, Eclipse, or Spring Tool Suite
-
-Clone the Repository
-git clone https://github.com/vikasgadekar18/EduTrack--SpringBoot.git
-cd EduTrack--SpringBoot
-
-Configure Database
-
-Create a new MySQL database named edutrack.
-
-Import the schema from src/main/resources/schema.sql to set up the necessary tables.
-
-Application Properties
-
-Update the application.properties file located in src/main/resources/ with your database credentials:
-
-spring.datasource.url=jdbc:mysql://localhost:3306/edutrack
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-
-Run the Application
-
-Use Maven to run the application:
-
-./mvnw spring-boot:run
+## Tech Stack
+- *Programming Language*: Java
+- *Framework*: Spring Boot
+- *ORM Tool*: Hibernate
+- *Database*: MySQL
+- *Build Tool*: Maven
+- *IDE*:  Eclipse
+- *Testing Tools*:  Postman (for API testing)
 
 
-Alternatively, you can run the EduTrackApplication class directly from your IDE.
+# Edutrack (Classroom and Attendence Management System) Web Application
 
-API Endpoints
-Authentication
+This is a EduTrack web-based  application implemented in Java using Springboot and hibernate .
 
-POST /auth/login: Authenticate and retrieve a JWT.
+## Features
+- *Student Attendance Tracking*: Easily manage and track student attendance records for each class.
+- *Classroom Management*: Maintain records of class schedules, subjects, and instructors.
+- *RESTful APIs*: Seamless integration of the system with other platforms through REST APIs.
+- *Secure Authentication*: User authentication and role-based access control using Spring Security.
+- *Responsive User Interface*: Optimized for usability with a clean interface.
 
-Attendance
+## Setup
 
-GET /attendance: Fetch all attendance records (Admin/Instructor only).
+### Prerequisites
+Ensure that you have the following tools installed on your local machine:
+- Java 8 or higher
+- Maven
+- MySQL
 
-POST /attendance: Record attendance for a class session (Instructor only).
+### Steps to Run the Project
 
-Courses
+1. *Clone the repository*:
+    bash
+    git clone https://github.com/omborhade/EduTrack--SpringBoot.git
+    cd EduTrack--SpringBoot
+    
 
-GET /courses: Fetch all courses (Admin/Instructor only).
+2. *Configure the MySQL Database*:
+   - Create a MySQL database:
+     sql
+     CREATE DATABASE edutrack_db;
+     
+   - Update the database connection details in the application.properties file:
+     properties
+     spring.datasource.url=jdbc:mysql://localhost:3306/edutrack_db
+     spring.datasource.username=your_username
+     spring.datasource.password=your_password
+     
 
-POST /courses: Create a new course (Admin only).
+3. *Build and run the project*:
+    bash
+    mvn clean install
+    mvn spring-boot:run
+    
 
-PUT /courses/{id}: Update course details (Instructor/Admin only).
+4. *Access the application*:
+   - Open your browser and go to http://localhost:8080 to interact with the system.
 
-Enrollments
+## API Endpoints
 
-GET /enrollments: Fetch all enrollments (Admin only).
+Here are some of the key REST APIs provided by the system:
 
-POST /enrollments: Enroll a student in a course (Admin only).
+- *Attendance APIs*:
+    - POST /api/attendance: Mark attendance for a class.
+    - GET /api/attendance/{classId}: Get attendance records for a class.
 
-Users
+- *Classroom APIs*:
+    - POST /api/classroom: Create a new classroom.
+    - GET /api/classroom/{id}: Retrieve details of a specific classroom.
+    - PUT /api/classroom/{id}: Update classroom details.
+    - DELETE /api/classroom/{id}: Delete a classroom.
 
-GET /users: Fetch all users (Admin only).
+## Usage
 
-POST /users: Create a new user (Admin only).
+1. *Login*: Sign in with administrator credentials to access the management dashboard.
+2. *Manage Attendance*: Use the dashboard to view and update student attendance.
+3. *Manage Classrooms*: Create and manage classroom schedules and student assignments.
+4. *API Usage*: Use tools like Postman to test the REST APIs for classroom and attendance management.
 
-Project Structure
-Explore my github repository you can easily see the project structure
-📞 Contact
-Developer: Vikas Gadekar
-Email: vikasgadekar10214@gmail.com
-GitHub: https://github.com/vikasgadekar18
+## Future Enhancements
+- *Student Report Generation*: Automatically generate attendance reports for students.
+- *Mobile App Integration*: Provide a mobile interface for students and teachers.
+- *Notifications*: Implement notifications to alert students and staff about upcoming classes or low attendance.
+
+## Contributing
+We welcome contributions from the community! Please feel free to fork the repository, submit issues, or create pull requests.
