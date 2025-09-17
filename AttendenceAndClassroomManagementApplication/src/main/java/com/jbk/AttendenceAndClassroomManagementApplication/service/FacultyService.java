@@ -12,5 +12,6 @@ public interface FacultyService {
 
     void saveFaculty(Faculty faculty);
 
+    
     void deleteFaculty(Long id);
 }
