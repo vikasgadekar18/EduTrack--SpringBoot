@@ -26,6 +26,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     public Department getDepartmentById(Long id) {
         return departmentDAO.getDepartmentById(id);
     }
+    
 
     @Override
     @Transactional
