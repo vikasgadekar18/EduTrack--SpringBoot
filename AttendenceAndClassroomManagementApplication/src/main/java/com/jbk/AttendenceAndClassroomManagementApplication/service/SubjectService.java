@@ -13,4 +13,5 @@ public interface SubjectService {
     void saveSubject(Subject subject);
 
     void deleteSubject(Long id);
+    
 }
