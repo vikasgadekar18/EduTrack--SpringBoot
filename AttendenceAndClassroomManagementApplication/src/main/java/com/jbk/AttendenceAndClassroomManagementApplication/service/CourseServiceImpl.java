@@ -21,6 +21,7 @@ public class CourseServiceImpl implements CourseService {
 	public List<Course> getAllCourses() {
 		return courseDAO.getAllCourses();
 	}
+	
 
 	@Override
 	@Transactional(readOnly = true)
