@@ -29,6 +29,7 @@ public class FacultyAttendanceService {
     public void saveFacultyAttendance(FacultyAttendance facultyAttendance) {
         facultyAttendanceDao.saveFacultyAttendance(facultyAttendance);
     }
+    
 
     @Transactional
     public void deleteFacultyAttendance(Long id) {
