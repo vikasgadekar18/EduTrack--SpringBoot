@@ -22,6 +22,7 @@ public class ClassScheduleServiceImpl implements ClassScheduleService {
 		return classScheduleDAO.getAllClassSchedules();
 	}
 
+	
 	@Override
 	@Transactional(readOnly = true)
 	public ClassSchedule getClassScheduleById(Long id) {
