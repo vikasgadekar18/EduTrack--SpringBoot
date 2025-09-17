@@ -20,6 +20,7 @@ public class FacultyServiceImpl implements FacultyService {
     public List<Faculty> getAllFaculties() {
         return facultyDAO.getAllFaculties();
     }
+    
 
     @Override
     @Transactional(readOnly = true)
