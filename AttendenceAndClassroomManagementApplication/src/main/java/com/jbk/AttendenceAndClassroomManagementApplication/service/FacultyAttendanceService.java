@@ -25,6 +25,7 @@ public class FacultyAttendanceService {
         return facultyAttendanceDao.getFacultyAttendanceById(id);
     }
 
+    
     @Transactional
     public void saveFacultyAttendance(FacultyAttendance facultyAttendance) {
         facultyAttendanceDao.saveFacultyAttendance(facultyAttendance);
