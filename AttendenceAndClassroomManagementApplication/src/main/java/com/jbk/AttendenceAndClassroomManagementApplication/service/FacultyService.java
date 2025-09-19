@@ -14,4 +14,5 @@ public interface FacultyService {
 
     
     void deleteFaculty(Long id);
+    
 }

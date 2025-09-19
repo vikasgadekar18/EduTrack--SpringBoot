@@ -14,4 +14,5 @@ public interface SubjectService {
 
     void deleteSubject(Long id);
     
+    
 }
