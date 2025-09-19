@@ -19,7 +19,7 @@ public class Classroom {
 
 	@Column(nullable = false)
 	private String name;
-
+    
 	public Classroom(Long id, String name) {
 		super();
 		this.id = id;
