@@ -16,6 +16,7 @@ import com.jbk.AttendenceAndClassroomManagementApplication.entity.ClassSchedule;
 import com.jbk.AttendenceAndClassroomManagementApplication.service.ClassScheduleService;
 
 
+
 @RestController
 @RequestMapping("/api/class-schedules")
 public class ClassScheduleController {
@@ -51,6 +52,7 @@ public class ClassScheduleController {
             classSchedule.setEndTime(classScheduleDetails.getEndTime());
             classScheduleService.saveClassSchedule(classSchedule);
         }
+        
         return classSchedule;
     }
 
