@@ -10,6 +10,7 @@ public class AttendenceAndClassroomManagementApplication {
 		
 		SpringApplication.run(AttendenceAndClassroomManagementApplication.class, args);
 		System.out.println("Application Started");
+		
 	}
 
 }
