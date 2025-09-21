@@ -30,6 +30,7 @@ public class ClassScheduleController {
         return classScheduleService.getAllClassSchedules();
     }
 
+    
     @GetMapping("/{id}")
     public ClassSchedule getClassScheduleById(@PathVariable Long id) {
         return classScheduleService.getClassScheduleById(id);
