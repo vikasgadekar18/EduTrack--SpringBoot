@@ -31,6 +31,8 @@ public class ClassroomController {
         return classroomService.getAllClassrooms();
     }
 
+    
+    
     @GetMapping("/{id}")
     public Classroom getClassroomById(@PathVariable Long id) {
         return classroomService.getClassroomById(id);
