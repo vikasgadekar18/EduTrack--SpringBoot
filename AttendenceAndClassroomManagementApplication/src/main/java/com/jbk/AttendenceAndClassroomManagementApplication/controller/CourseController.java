@@ -31,6 +31,7 @@ public class CourseController {
         return courseService.getAllCourses();
     }
 
+    
     @GetMapping("/{id}")
     public Course getCourseById(@PathVariable Long id) {
         return courseService.getCourseById(id);
