@@ -13,6 +13,5 @@ public interface ClassScheduleService {
 	void saveClassSchedule(ClassSchedule classSchedule);
 
 	
-	
 	void deleteClassSchedule(Long id);
 }
