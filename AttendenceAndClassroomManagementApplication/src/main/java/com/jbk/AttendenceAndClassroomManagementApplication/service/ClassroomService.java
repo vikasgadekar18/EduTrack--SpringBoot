@@ -16,6 +16,5 @@ public interface ClassroomService {
     void saveClassroom(Classroom classroom);
 
     
-    
     void deleteClassroom(Long id);
 }
