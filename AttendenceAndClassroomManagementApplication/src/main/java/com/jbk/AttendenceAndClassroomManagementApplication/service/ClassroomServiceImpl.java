@@ -21,8 +21,6 @@ public class ClassroomServiceImpl implements ClassroomService {
 	public List<Classroom> getAllClassrooms() {
 		return classroomDAO.getAllClassrooms();
 	}
-
-	
 	
 	@Override
 	@Transactional(readOnly = true)
