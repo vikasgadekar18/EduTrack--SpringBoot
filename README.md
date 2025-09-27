@@ -5,7 +5,7 @@
 - *Database*: MySQL
 - *Build Tool*: Maven
 - *IDE*:  Eclipse
-- *Testing Tools*:  Postman (for API testing)
+- *Testing Tools*: Postman (for API testing)
 
 
 # Edutrack (Classroom and Attendence Management System) Web Application
