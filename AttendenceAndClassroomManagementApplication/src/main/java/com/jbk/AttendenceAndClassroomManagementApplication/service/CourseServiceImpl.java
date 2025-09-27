@@ -22,7 +22,6 @@ public class CourseServiceImpl implements CourseService {
 		return courseDAO.getAllCourses();
 	}
 	
-	
 
 	@Override
 	@Transactional(readOnly = true)
