@@ -30,8 +30,6 @@ public class ClassroomController {
     public List<Classroom> getAllClassrooms() {
         return classroomService.getAllClassrooms();
     }
-
-    
     
     @GetMapping("/{id}")
     public Classroom getClassroomById(@PathVariable Long id) {
