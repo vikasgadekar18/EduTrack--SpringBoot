@@ -35,7 +35,6 @@ public class ClassScheduleController {
     public ClassSchedule getClassScheduleById(@PathVariable Long id) {
         return classScheduleService.getClassScheduleById(id);
     }
-
     @PostMapping
     public ClassSchedule createClassSchedule(@RequestBody ClassSchedule classSchedule) {
         classScheduleService.saveClassSchedule(classSchedule);
