@@ -22,7 +22,6 @@ public class CourseServiceImpl implements CourseService {
 		return courseDAO.getAllCourses();
 	}
 	
-
 	@Override
 	@Transactional(readOnly = true)
 	public Course getCourseById(Long id) {
@@ -38,6 +37,8 @@ public class CourseServiceImpl implements CourseService {
 	@Override
 	@Transactional
 	public void deleteCourse(Long id) {
+		
 		courseDAO.deleteCourse(id);
+		
 	}
 }
