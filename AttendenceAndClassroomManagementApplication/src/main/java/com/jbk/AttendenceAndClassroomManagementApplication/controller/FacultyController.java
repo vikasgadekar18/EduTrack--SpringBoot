@@ -27,6 +27,7 @@ public class FacultyController {
     public List<Faculty> getAllFaculties() {
         return facultyService.getAllFaculties();
     }
+    
     @GetMapping("/{id}")
     public Faculty getFacultyById(@PathVariable Long id) {
         return facultyService.getFacultyById(id);
