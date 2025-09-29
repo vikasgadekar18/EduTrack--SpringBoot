@@ -25,6 +25,7 @@ public class FacultyAttendanceController {
 	public FacultyAttendance getFacultyAttendanceById(@PathVariable Long id) {
 		return facultyAttendanceService.getFacultyAttendanceById(id);
 	}
+	
 	@PostMapping
 	public FacultyAttendance createFacultyAttendance(@RequestBody FacultyAttendance facultyAttendance) {
 		facultyAttendanceService.saveFacultyAttendance(facultyAttendance);
