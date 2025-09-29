@@ -28,6 +28,8 @@ public class SubjectController {
     public List<Subject> getAllSubjects() {
         return subjectService.getAllSubjects();
     }
+    
+    
     @GetMapping("/{id}")
     public Subject getSubjectById(@PathVariable Long id) {
         return subjectService.getSubjectById(id);
