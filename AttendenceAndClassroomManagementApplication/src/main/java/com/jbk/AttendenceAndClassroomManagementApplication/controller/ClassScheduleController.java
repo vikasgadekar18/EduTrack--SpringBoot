@@ -25,12 +25,11 @@ public class ClassScheduleController {
     @Autowired
     private ClassScheduleService classScheduleService;
 
-    @GetMapping("getallclassschedules")
+    @GetMapping("/getallclassschedules")
     public List<ClassSchedule> getAllClassSchedules() {
         return classScheduleService.getAllClassSchedules();
     }
 
-    
     @GetMapping("/{id}")
     public ClassSchedule getClassScheduleById(@PathVariable Long id) {
         return classScheduleService.getClassScheduleById(id);
