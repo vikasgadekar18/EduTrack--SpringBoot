@@ -21,8 +21,6 @@ import com.jbk.AttendenceAndClassroomManagementApplication.service.ClassroomServ
 @RestController
 @RequestMapping("/api/classrooms")
 public class ClassroomController {
-
-	
     @Autowired
     private ClassroomService classroomService;
 
