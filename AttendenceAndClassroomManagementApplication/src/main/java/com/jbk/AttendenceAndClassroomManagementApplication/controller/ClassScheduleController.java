@@ -25,6 +25,8 @@ public class ClassScheduleController {
     @Autowired
     private ClassScheduleService classScheduleService;
 
+    
+    
     @GetMapping("/getallclassschedules")
     public List<ClassSchedule> getAllClassSchedules() {
         return classScheduleService.getAllClassSchedules();
