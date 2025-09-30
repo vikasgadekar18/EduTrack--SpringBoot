@@ -28,6 +28,7 @@ public class FacultyController {
         return facultyService.getAllFaculties();
     }
     
+    
     @GetMapping("/{id}")
     public Faculty getFacultyById(@PathVariable Long id) {
         return facultyService.getFacultyById(id);
