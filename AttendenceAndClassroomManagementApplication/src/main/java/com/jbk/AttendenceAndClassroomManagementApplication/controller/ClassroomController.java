@@ -25,7 +25,8 @@ public class ClassroomController {
     private ClassroomService classroomService;
 
     @GetMapping("getallclassrooms")
-    public List<Classroom> getAllClassrooms() {
+    public List<Classroom> getAllClassrooms() 
+    {
         return classroomService.getAllClassrooms();
     }
     
