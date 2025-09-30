@@ -30,6 +30,7 @@ public class SubjectController {
     }
     
     
+    
     @GetMapping("/{id}")
     public Subject getSubjectById(@PathVariable Long id) {
         return subjectService.getSubjectById(id);
