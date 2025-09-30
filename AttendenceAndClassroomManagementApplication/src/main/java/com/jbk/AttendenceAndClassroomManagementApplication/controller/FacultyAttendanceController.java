@@ -26,6 +26,7 @@ public class FacultyAttendanceController {
 		return facultyAttendanceService.getFacultyAttendanceById(id);
 	}
 	
+	
 	@PostMapping
 	public FacultyAttendance createFacultyAttendance(@RequestBody FacultyAttendance facultyAttendance) {
 		facultyAttendanceService.saveFacultyAttendance(facultyAttendance);
