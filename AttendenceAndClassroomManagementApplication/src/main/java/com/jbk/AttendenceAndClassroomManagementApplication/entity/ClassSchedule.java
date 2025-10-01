@@ -44,6 +44,8 @@ public class ClassSchedule {
 		this.startTime = startTime;
 		this.endTime = endTime;
 	}
+	
+	
 
 	public ClassSchedule(Long subjectId, Long classroomId, String dayOfWeek, Time startTime, Time endTime) {
 		super();
