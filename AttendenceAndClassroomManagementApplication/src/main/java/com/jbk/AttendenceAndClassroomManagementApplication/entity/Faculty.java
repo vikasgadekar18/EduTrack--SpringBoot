@@ -62,6 +62,7 @@ public class Faculty {
 	public Long getDepartmentId() {
 		return departmentId;
 	}
+	
 
 	public void setDepartmentId(Long departmentId) {
 		this.departmentId = departmentId;
